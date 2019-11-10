@@ -1,0 +1,67 @@
+@import './variables';
+
+* {
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  .home-main-content {
+    padding: 10px;
+  }
+}
+
+.input-button-container {
+  margin-bottom: 5px;
+}
+
+button {
+  height: 24px;
+  border-radius: 5px;
+  border: none;
+  background-color: $button-grey;
+  cursor: pointer;
+  color: $black-font;
+
+  &:hover {
+    background-color: darken($button-grey, 5%);
+    box-shadow: none;
+  }
+
+  &:focus {
+    outline-width: 0;
+  }
+}
+
+input {
+  background-color: $bonsai-grey;
+  border-radius: 5px;
+  height: 24px;
+  border: 1px solid transparent;
+  color: $black-font;
+  padding: 0 5px;
+
+  &::placeholder {
+    color: $black-font;
+  }
+
+  &:hover {
+    background-color: darken($bonsai-grey, 5%);
+    box-shadow: none;
+  }
+
+  &::placeholder {
+    color: $placeholder-grey;
+  }
+}
+
+input {
+  &:focus {
+    outline-width: 0;
+    background-color: lighten($bonsai-grey, 3%);
+    border: 1px solid $bonsai-grey;
+  }
+}

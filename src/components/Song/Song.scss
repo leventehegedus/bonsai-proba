@@ -1,0 +1,30 @@
+@import '../../variables';
+
+.song-container {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $placeholder-grey;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+
+  .title-and-performer-container {
+    .title {
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    .performer {
+      color: $placeholder-grey;
+      font-size: 12px;
+    }
+  }
+  .action-container {
+    display: flex;
+    img {
+      height: 20px;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+  }
+}

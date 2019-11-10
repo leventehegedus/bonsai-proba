@@ -1,0 +1,33 @@
+.playlist-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+
+  .playlist-name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .playlist-header {
+      cursor: pointer;
+      .name {
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+    }
+    img {
+      cursor: pointer;
+      height: 20px;
+    }
+  }
+
+  .songs-container {
+    width: 100%;
+    margin-top: 5px;
+    padding: 0px 20px;
+  }
+}
